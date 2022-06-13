@@ -1,0 +1,84 @@
+@use 'sass:math';
+@use '../themes/defaultTheme' as *;
+
+$line-height: 280px;
+$line-length: 600px;
+$line-thickness: 6px;
+
+.landing{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .name{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $custom-font-2;
+    font-size: 58px;
+    width: 70vw;
+    max-width: 350px;
+    text-shadow: 5px 3px 6px #0000007c;
+  }
+  .role{
+    font-family: $custom-font-2;
+    font-size: 30px;
+    width: 70vw;
+    max-width: 350px;
+    text-align: center;
+    text-shadow: 5px 3px 6px #0000007c;
+  }
+  .img-container{
+    margin-top: 1rem;
+    width: 200px;
+
+    img{
+      border-radius: 50%;
+    }
+  }
+  // .line{
+  //   background: $clr-green-2;
+  //   height: 3px;
+  //   width: $line-length;
+  //   position: absolute;
+  //   top: 10px;
+  //   display: inline-block;
+  // }
+  // .left{
+  //   transform-origin: top left;
+  //   // transform: rotate(math.asin($line-height / $line-length));
+  //   transform: rotate(60deg);
+  // }
+  // .right{
+  //   transform-origin: top right;
+  //   // transform: rotate(math.asin($line-height / $line-length) * -1);
+  //   transform: rotate(300deg);
+  // }
+
+  .line-container{
+    display: flex;
+    height: auto;
+    width: 100vw;
+    .line{
+      width: 50vw;
+      height: $line-height;
+      background: $clr-green-2;
+      position: absolute;
+      top: 254px;
+
+      &.left{
+        clip-path: polygon(0 0, 100% $line-height - $line-thickness, 100% 100%, 0 $line-thickness);
+        left: 0;
+      }
+      &.right{
+        clip-path: polygon(0 0, 100% $line-height - $line-thickness, 100% 100%, 0 $line-thickness);
+        transform: rotate3d(0, 1, 0, 180deg);
+        right: 0;
+      }
+    }
+  }
+
+  .line-spacer{
+    height: $line-height - 157px;
+  }
+}

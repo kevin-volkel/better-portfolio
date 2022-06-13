@@ -1,0 +1,27 @@
+@use '../themes/defaultTheme' as *;
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body{
+  background: $clr-grey-1;
+  width: 100vw;
+}
+
+.divider{
+  height: 3px;
+  width: 100vw;
+  background: $clr-green-2;
+}
+
+.section-title{
+  font-family: $custom-font-2;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 58px;
+  margin-bottom: 10px;
+}
