@@ -36,24 +36,6 @@ $line-thickness: 6px;
       border-radius: 50%;
     }
   }
-  // .line{
-  //   background: $clr-green-2;
-  //   height: 3px;
-  //   width: $line-length;
-  //   position: absolute;
-  //   top: 10px;
-  //   display: inline-block;
-  // }
-  // .left{
-  //   transform-origin: top left;
-  //   // transform: rotate(math.asin($line-height / $line-length));
-  //   transform: rotate(60deg);
-  // }
-  // .right{
-  //   transform-origin: top right;
-  //   // transform: rotate(math.asin($line-height / $line-length) * -1);
-  //   transform: rotate(300deg);
-  // }
 
   .line-container{
     display: flex;
@@ -79,6 +61,6 @@ $line-thickness: 6px;
   }
 
   .line-spacer{
-    height: $line-height - 157px;
+    height: $line-height - 155px;
   }
 }

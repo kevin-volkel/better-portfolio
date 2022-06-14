@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Gudea&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -80,11 +81,44 @@ body {
   right: 0;
 }
 .landing .line-spacer {
-  height: 123px;
+  height: 125px;
 }
 
 .skills-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  height: 60vw;
+  width: 60vw;
+  max-height: 400px;
+  max-width: 400px;
+  font-family: "Gugi", cursive;
+  border-radius: 50%;
+  position: relative;
+  border: 10px solid #D9D9D9;
+  background: #1E1E1E;
+}
+.skill-container .progress {
+  position: absolute;
+  height: 60vw;
+  width: 60vw;
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 50%;
+  border: 10px solid #086100;
+}
+.skill-container .skill-name {
+  text-transform: uppercase;
+  font-size: 48px;
+}
+.skill-container .skill-percentage {
+  font-size: 40px;
 }/*# sourceMappingURL=main.css.map */
