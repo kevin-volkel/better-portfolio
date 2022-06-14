@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const SkillCircle = ({ skill, percentage }) => {
+
+  const [currPerc, setCurrPerc] = useState(0)
 
   const findClipPath = (perc) => {
     const ranges = [
@@ -34,10 +36,17 @@ const SkillCircle = ({ skill, percentage }) => {
 
   };
 
+  useEffect(() => {
+    if(currPerc < percentage) {
+      setTimeout(() => setCurrPerc(prev => prev + 0.1), 1)
+    }
+  }, [currPerc])
+  
+
   return (
     <>
       <div className="skill-container">
-        <div className="progress" style={{clipPath: findClipPath(percentage)}}></div>
+        <div className="progress" style={{clipPath: findClipPath(currPerc)}}></div>
         <div className="skill-name">{skill}</div>
         <div className="skill-percentage">{percentage}%</div>
       </div>
