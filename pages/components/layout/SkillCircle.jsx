@@ -47,8 +47,10 @@ const SkillCircle = ({ skill, percentage }) => {
     <>
       <div className="skill-container">
         <div className="progress" style={{clipPath: findClipPath(currPerc)}}></div>
-        <div className="skill-name">{skill}</div>
-        <div className="skill-percentage">{percentage}%</div>
+        <div className="inside">
+          <div className="skill-name">{skill}</div>
+          <div className="skill-percentage">{percentage}%</div>
+        </div>
       </div>
     </>
   );

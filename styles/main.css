@@ -108,17 +108,29 @@ body {
 }
 .skill-container .progress {
   position: absolute;
-  height: 60vw;
-  width: 60vw;
-  max-height: 400px;
-  max-width: 400px;
+  width: 61vw;
+  height: 61vw;
+  max-width: 410px;
+  max-height: 410px;
   border-radius: 50%;
-  border: 10px solid #086100;
+  background: #086100;
+  z-index: 2;
 }
-.skill-container .skill-name {
+.skill-container .inside {
+  background: #1E1E1E;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skill-container .inside .skill-name {
   text-transform: uppercase;
   font-size: 48px;
 }
-.skill-container .skill-percentage {
+.skill-container .inside .skill-percentage {
   font-size: 40px;
 }/*# sourceMappingURL=main.css.map */

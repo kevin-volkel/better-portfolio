@@ -19,19 +19,34 @@
 
   .progress {
     position: absolute;
-    height: 60vw;
-    width: 60vw;
-    max-height: 400px;
-    max-width: 400px;
+    width: 61vw;
+    height: 61vw;
+    max-width: 410px;
+    max-height: 410px;
     border-radius: 50%;
-    border: 10px solid $clr-green-3;
+    background: $clr-green-3;
+    z-index: 2;
+    // border: 10px solid $clr-green-3;
   }
 
-  .skill-name {
-    text-transform: uppercase;
-    font-size: 48px;
+  .inside{
+    background: $clr-grey-1;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .skill-name {
+      text-transform: uppercase;
+      font-size: 48px;
+    }
+    .skill-percentage {
+      font-size: 40px;
+    }
   }
-  .skill-percentage {
-    font-size: 40px;
-  }
+
 }
