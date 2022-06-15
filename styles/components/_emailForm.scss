@@ -1,0 +1,54 @@
+@use '../themes/defaultTheme' as *;
+
+.email-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  max-width: 750px;
+  margin-top: -1rem;
+  gap: 10px;
+
+  .form-header{
+    font-family: $custom-font-4;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+
+  input, textarea{
+    color: black;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    width: 90%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: $custom-font-4;
+    padding: 2px;
+    background: $clr-grey-2;
+  }
+
+  button{
+    color: black;
+    width: 60%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    background: $clr-green-1;
+    padding: 3px;
+    font-family: $custom-font-1;
+    font-size: 1rem;
+    text-transform: uppercase;
+    
+    &:active{
+      background: $clr-green-4;
+    }
+    &.disabled{
+      background: $clr-green-4;
+      &:active{
+        background: $clr-green-4;
+      }
+    }
+  }
+}

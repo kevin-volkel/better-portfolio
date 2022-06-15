@@ -1,0 +1,57 @@
+@use '../themes/defaultTheme' as *;
+
+.resume-part{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+
+  .resume-title{
+    color: $clr-green-1;
+    text-transform: uppercase;
+    font-family: $custom-font-4;
+    font-size: 25px;
+    display: flex;
+
+  }
+  
+  .resume-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    .resume-item{
+      font-family: $custom-font-4;
+      width: 85%;
+      position: relative;
+      margin-left: 1.5rem;
+      
+      &::before{
+        height: 8px;
+        width: 8px;
+        align-self: center;
+        background: $clr-green-2;
+        border-radius: 50%;
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -14px;
+        border: 1px solid black;
+      }
+      
+      .date{
+        background: #2c2c2c36;
+        color: $clr-green-2;
+        margin-bottom: 5px;
+        
+      }
+      .text{
+        font-size: 14px;
+      }
+      .date+.text{
+        margin-left: 1rem;
+      }
+
+    }
+
+  }
+}
