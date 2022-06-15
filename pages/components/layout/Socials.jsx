@@ -8,12 +8,12 @@ const Socials = () => {
     <div className="socials">
       <a href="https://github.com/theKevinator900">
         <div className="logo">
-          <Image src={githubLogo} />
+          <Image src={githubLogo} alt="Github Logo"/>
         </div>
       </a>
       <a href="https://www.instagram.com/thekevinator900/">
         <div className="logo">
-          <Image src={instaLogo} />
+          <Image src={instaLogo} alt="Instagranm Logo"/>
         </div>
       </a>
     </div>

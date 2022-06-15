@@ -40,7 +40,7 @@ const SkillCircle = ({ skill, percentage }) => {
     if(currPerc < percentage) {
       setTimeout(() => setCurrPerc(prev => prev + 0.1), 1)
     }
-  }, [currPerc])
+  }, [currPerc, percentage])
   
 
   return (

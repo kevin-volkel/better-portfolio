@@ -18,6 +18,7 @@ const Landing = () => {
           onClick={() => {
             setIsColor((prev) => !prev);
           }}
+          alt="Profile Picture"
         />
       </div>
       <div className="line-container">
