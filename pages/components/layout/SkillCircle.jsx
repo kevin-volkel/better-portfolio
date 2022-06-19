@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const SkillCircle = ({ skill, percentage }) => {
+const SkillCircle = ({ skill, percentage, anim }) => {
 
   const [currPerc, setCurrPerc] = useState(0)
 
@@ -37,10 +37,10 @@ const SkillCircle = ({ skill, percentage }) => {
   };
 
   useEffect(() => {
-    if(currPerc < percentage) {
+    if(currPerc < percentage && anim) {
       setTimeout(() => setCurrPerc(prev => prev + 0.1), 1)
     }
-  }, [currPerc, percentage])
+  }, [currPerc, percentage, anim])
   
 
   return (
