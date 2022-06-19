@@ -49,10 +49,10 @@ const Resume = () => {
             const { title, items } = part;
 
             return (
-              <>
-                <ResumePart title={title} items={items} key={i}/>
-                {i !== resumeParts.length - 1 && <div className="resume-divider" key={`d${i}`}/>}
-              </>
+              <div key={i} className="resume-part">
+                <ResumePart title={title} items={items}/>
+                {i !== resumeParts.length - 1 && <div className="resume-divider"/>}
+              </div>
             );
           })}
         </div>

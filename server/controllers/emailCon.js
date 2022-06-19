@@ -11,11 +11,15 @@ const sendEmail = async (req, res) => {
     const emailTest = email.match(emailReg)
     if(emailTest === null) return res.status(400).send('Invalid email')
 
+    const testAccount = await nodemailer.createTestAccount();
+
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.ethereal.email',
+      port: 587,
+      secure: false,
       auth: {
-        user: process.env.NODEMAILEREMAIL,
-        pass: process.env.NODEMAILERPASS,
+        user: testAccount.user,
+        pass: testAccount.pass
       },
     });
 
