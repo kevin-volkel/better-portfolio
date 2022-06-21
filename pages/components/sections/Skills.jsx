@@ -25,7 +25,7 @@ const Skills = () => {
     const innerWidth = window.innerWidth;
 
     if (innerWidth <= 480) {
-      animate(scroll, 100, 200);
+      animate(scroll, 20, 200);
     }
   };
 
