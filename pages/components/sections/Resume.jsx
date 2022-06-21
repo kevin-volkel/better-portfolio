@@ -42,7 +42,7 @@ const Resume = () => {
 
   return (
     <>
-      <div className="resume-container">
+      <div className="resume-container container" id="resume">
         <div className="section-title">Resume</div>
         <div className="resume-parts">
           {resumeParts.map((part, i) => {

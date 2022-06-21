@@ -4,7 +4,7 @@ import Socials from '../layout/Socials'
 
 const Contact = () => {
   return <>
-    <div className="contact-container">
+    <div className="contact-container container" id="contact">
       <div className="section-title">Contact</div>
       <Socials />
       <EmailForm />

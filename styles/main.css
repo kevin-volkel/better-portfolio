@@ -28,13 +28,13 @@ body {
   margin-bottom: 10px;
 }
 
-.landing {
+.landing-container {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.landing .name {
+.landing-container .name {
   text-align: center;
   text-transform: uppercase;
   font-family: "Work Sans", sans-serif;
@@ -43,7 +43,7 @@ body {
   max-width: 350px;
   text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.4862745098);
 }
-.landing .role {
+.landing-container .role {
   font-family: "Work Sans", sans-serif;
   font-size: 30px;
   width: 70vw;
@@ -51,37 +51,37 @@ body {
   text-align: center;
   text-shadow: 5px 3px 6px rgba(0, 0, 0, 0.4862745098);
 }
-.landing .img-container {
+.landing-container .img-container {
   margin-top: 1rem;
   width: 200px;
 }
-.landing .img-container img {
+.landing-container .img-container img {
   border-radius: 50%;
 }
-.landing .line-container {
+.landing-container .line-container {
   display: flex;
   height: auto;
   width: 100vw;
 }
-.landing .line-container .line {
+.landing-container .line-container .line {
   width: 50vw;
   height: 280px;
   background: #058E3F;
   position: absolute;
   top: 254px;
 }
-.landing .line-container .line.left {
+.landing-container .line-container .line.left {
   -webkit-clip-path: polygon(0 0, 100% 274px, 100% 100%, 0 6px);
           clip-path: polygon(0 0, 100% 274px, 100% 100%, 0 6px);
   left: 0;
 }
-.landing .line-container .line.right {
+.landing-container .line-container .line.right {
   -webkit-clip-path: polygon(0 0, 100% 274px, 100% 100%, 0 6px);
           clip-path: polygon(0 0, 100% 274px, 100% 100%, 0 6px);
   transform: rotate3d(0, 1, 0, 180deg);
   right: 0;
 }
-.landing .line-spacer {
+.landing-container .line-spacer {
   height: 125px;
 }
 
@@ -123,21 +123,50 @@ body {
   margin-bottom: 1rem;
 }
 
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 15px;
+  z-index: 200;
+  width: 38px;
+  height: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger .hamburger-line {
+  height: 5px;
+  width: 100%;
+  background: #eee;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
 .navbar-container {
   background: #171717;
   position: fixed;
-  left: 0;
   top: 0;
   z-index: 100;
   height: 100vh;
   width: 50vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   overflow: hidden;
+  font-family: "Gudea", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: left 0.3s ease-out;
 }
 .navbar-container .nav-item {
-  margin-left: 10px;
+  margin-left: 30px;
+}
+.navbar-container.closed {
+  left: -50vw;
+}
+.navbar-container.open {
+  left: 0;
 }
 
 .skill-container {

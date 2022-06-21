@@ -9,7 +9,7 @@ const Landing = () => {
   const [isColor, setIsColor] = useState(false);
 
   return (
-    <div className="landing">
+    <div className="landing-container container" id="landing">
       <h2 className="name">Kevin Volkel</h2>
       <h3 className="role">Web Designer</h3>
       <div className="img-container">

@@ -30,7 +30,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="skills-container">
+    <div className="skills-container container" id="skills">
       <div className="section-title">Skills</div>
       <SkillCircle anim={anim[0]} skill="html" percentage={95} />
       <SkillCircle anim={anim[1]} skill="css" percentage={75} />

@@ -19,7 +19,7 @@ const Gallery = () => {
       url: "https://thekevinator900.github.io/Uno/",
     },
     {
-      title: "Atlas",
+      title: "*Atlas",
       img: atlasImg,
       desc: "A design for a weather tracking site",
       url: "https://github.com/Joshuarvlcb/Atlas.git",
@@ -28,7 +28,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="gallery-container">
+      <div className="gallery-container container" id="gallery">
         <div className="section-title">Gallery</div>
         {projects.map((project, i) => (
           <ProjectCard

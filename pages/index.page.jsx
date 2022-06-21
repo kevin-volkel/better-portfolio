@@ -9,7 +9,7 @@ import Navbar from './components/layout/Navbar'
 const Home = () => {
   return <>
     <HeadTag />
-    {/* <Navbar /> */}
+    <Navbar />
     <Landing/>
     <div className="divider"></div>
     <Skills />
