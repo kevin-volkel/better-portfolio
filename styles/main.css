@@ -350,14 +350,19 @@ a .card-container .card-desc {
   width: 90vw;
   max-width: 750px;
   margin-top: -1rem;
-  gap: 10px;
 }
 .email-form .form-header {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-size: 1.4rem;
 }
+.email-form p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
 .email-form input, .email-form textarea {
+  margin-bottom: 10px;
   color: black;
   line-height: 1.2rem;
   font-size: 0.9rem;

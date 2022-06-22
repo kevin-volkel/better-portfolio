@@ -65,6 +65,7 @@ const EmailForm = () => {
     <>
       <form className="email-form" onSubmit={handleSubmit}>
         <div className="form-header">Email Me</div>
+        <p>volkelkevin9@gmail.com</p>
         <input
           placeholder="Name"
           value={name}
