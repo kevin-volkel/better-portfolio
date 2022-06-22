@@ -128,8 +128,8 @@ body {
   top: 20px;
   left: 15px;
   z-index: 200;
-  width: 38px;
-  height: 33px;
+  width: 30px;
+  height: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -152,15 +152,37 @@ body {
   width: 50vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   overflow: hidden;
-  font-family: "Gudea", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.2rem;
   transition: left 0.3s ease-out;
+  border-right: 3px solid #086100;
+  max-width: 250px;
+}
+.navbar-container .spacer {
+  height: 15vh;
 }
 .navbar-container .nav-item {
-  margin-left: 30px;
+  height: 18vh;
+  text-transform: uppercase;
+  font-family: "Gudea", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  border-left: 2px solid #058E3F;
+}
+.navbar-container .nav-item::before {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  background: #058E3F;
+  position: relative;
+  left: -11px;
+  top: 0.5px;
+  z-index: 105;
+  border: 3.5px solid #171717;
+}
+.navbar-container .nav-item:last-of-type {
+  border-left: 2px solid #171717;
 }
 .navbar-container.closed {
   left: -50vw;

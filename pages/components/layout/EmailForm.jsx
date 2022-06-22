@@ -70,12 +70,14 @@ const EmailForm = () => {
           value={name}
           name="name"
           onChange={handleChange}
+          disabled
         />
         <input
           placeholder="Email"
           value={email}
           name="email"
           onChange={handleChange}
+          disabled
         />
         <textarea
           placeholder="Body"
@@ -86,6 +88,7 @@ const EmailForm = () => {
             width: "90%",
             height: "15rem",
           }}
+          disabled
         />
         <button
           disabled={!valid || loading}
