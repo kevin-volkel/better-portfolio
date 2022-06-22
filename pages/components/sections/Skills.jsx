@@ -6,7 +6,7 @@ const Skills = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   const animate = (scroll, start, gap) => {
     if (scroll > start) {
