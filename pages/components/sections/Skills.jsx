@@ -4,10 +4,7 @@ import SkillCircle from "../layout/SkillCircle";
 const Skills = () => {
   const [anim, setAnim] = useState([false, false, false, false, false, false]);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, [handleScroll]);
-
+  
   const animate = (scroll, start, gap) => {
     if (scroll > start) {
       const amountAnimated = Math.floor((scroll - start) / gap);
@@ -19,7 +16,7 @@ const Skills = () => {
       setAnim(newArr)
     }
   };
-
+  
   const handleScroll = (e) => {
     const scroll = window.scrollY;
     const innerWidth = window.innerWidth;
@@ -28,6 +25,10 @@ const Skills = () => {
       animate(scroll, 20, 200);
     }
   };
+  
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="skills-container container" id="skills">

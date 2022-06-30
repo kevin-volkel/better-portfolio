@@ -10,6 +10,28 @@
 body{
   background: $clr-grey-1;
   width: 100vw;
+
+  &::-webkit-scrollbar{
+    width: 15px;
+  }
+
+  &::-webkit-scrollbar-track{
+    background: #171717;
+  }
+
+  &::-webkit-scrollbar-thumb{
+    background: #eee;
+    border-radius: 20px;
+    border: 4px solid #171717;
+
+    &:hover{
+      background: #aaa
+    }
+
+  }
+  &::-webkit-scrollbar-button{
+    display: none;
+  }
 }
 
 .divider{

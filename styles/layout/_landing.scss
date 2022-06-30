@@ -38,9 +38,8 @@ $line-thickness: 6px;
   }
 
   .line-container{
-    display: flex;
-    height: auto;
-    width: 100vw;
+
+
     .line{
       width: 50vw;
       height: $line-height;
@@ -53,9 +52,8 @@ $line-thickness: 6px;
         left: 0;
       }
       &.right{
-        clip-path: polygon(0 0, 100% $line-height - $line-thickness, 100% 100%, 0 $line-thickness);
-        transform: rotate3d(0, 1, 0, 180deg);
-        right: 0;
+        clip-path: polygon(100% 0, 100% $line-thickness, 0 100%, 0 $line-height - $line-thickness);
+        left: 50vw;
       }
     }
   }

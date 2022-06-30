@@ -20,7 +20,7 @@ const Navbar = () => {
             setNavOpen(false)
           }}
         >
-          Landing
+          <p>Landing</p>
         </div>
         <div
           className="nav-item"
@@ -29,7 +29,7 @@ const Navbar = () => {
             setNavOpen(false)
           }}
         >
-          Skills
+          <p>Skills</p>
         </div>
         <div
           className="nav-item"
@@ -38,7 +38,7 @@ const Navbar = () => {
             setNavOpen(false)
           }}
         >
-          Gallery
+          <p>Gallery</p>
         </div>
         <div
           className="nav-item"
@@ -47,7 +47,7 @@ const Navbar = () => {
             setNavOpen(false)
           }}
         >
-          Resume
+          <p>Resume</p>
         </div>
         <div
           className="nav-item"
@@ -56,7 +56,7 @@ const Navbar = () => {
             setNavOpen(false)
           }}
         >
-          Contact
+          <p>Contact</p>
         </div>
       </div>
     </>
